@@ -1,0 +1,105 @@
+.user-profile-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.user-profile-container.visible {
+    transform: translateX(0);
+}
+
+.user-profile-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-button {
+    color: white;
+    font-size: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.user-profile-header h2 {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+}
+
+.user-profile-content {
+    padding: 20px;
+    color: white;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.user-profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    border: 2px solid white;
+}
+
+.user-description {
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.user-stats {
+    margin-bottom: 24px;
+}
+
+.user-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.user-hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.hashtag {
+    color: #5ec9ff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.user-engagement {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.engagement-stat {
+    text-align: center;
+    font-size: 14px;
+}
